@@ -1,0 +1,101 @@
+.dark {
+  --color-page-background: #{$dark-bg};
+  --color-text: #{$white};
+  --color-header: #{$dark-el};
+
+  // Placeholder
+  // Default appearence placeholder text
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: var(--color-text);
+  opacity: 0.5;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: var(--color-text);
+  opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: var(--color-text);
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--color-text);
+  opacity: 0.5;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--color-text);
+  opacity: 0.5;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+  color: var(--color-text);
+  opacity: 0.5;
+}
+
+  // Header
+  .header {
+    background-color: var(--color-header);
+    @include box-shadow(rgba(0, 0, 0, 0.1));
+
+    // Header Button
+    & button {
+      color: var(--color-text);
+      path {
+        fill: $white;
+        stroke: $white;
+      }
+      
+    }
+  }
+
+  // Search and select inputs
+  .search__input,
+  .select__input {
+    background-color: var(--color-header);
+    border: none;
+    color: var(--color-text);
+    @include box-shadow(rgba(0, 0, 0, 0.1));
+  }
+
+  // Filter btn
+  .is-filtered {
+    button {
+      background-color: var(--color-header);
+      color: var(--color-text);
+      @include box-shadow(rgba(0, 0, 0, 0.1));
+    }
+  }
+
+  // All countries bg
+  .countries {
+    background-color: var(--color-page-background);
+  }
+
+  // Cards
+  .card {
+    @include box-shadow(rgba(0, 0, 0, 0.1));
+
+    .card__body {
+      background-color: var(--color-header);
+      color: var(--color-text);
+    }
+  }
+  
+
+  // Btns
+  .btn {
+    background-color: var(--color-header);
+    color: var(--color-text);
+    @include box-shadow(rgba(0, 0, 0, 0.1));
+
+    &--back {
+      svg {
+        // mix-blend-mode: difference;
+        path {
+          stroke: $white !important;
+        }
+      }
+    }
+  }
+
+  
+}

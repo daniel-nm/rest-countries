@@ -1,0 +1,44 @@
+// Container
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+// Header
+.header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// Search and select fields
+.fields {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// Country cards
+.countriesCards {
+  display: grid;
+  row-gap: 2rem;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+  @media screen and (min-width: 1024px) {  
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: 1440px) {  
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+

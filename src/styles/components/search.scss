@@ -1,0 +1,41 @@
+.search {
+  margin-top: 2rem;
+  position: relative;
+
+  @media screen and (min-width: 1024px) {
+    width: 35%;
+  }
+
+  .search__label {
+    display: none;
+  }
+
+  .search__input {
+    background-color: $white;
+    color: $gray;
+    border: 1px solid $light-gray;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    width: 100%; 
+    padding: 0 2rem 0 4.5rem;
+    @include box-shadow(rgba(133,133,133,0.1));
+
+    @media screen and (min-width: 1024px) {
+      font-size: 1rem;
+    }
+  }
+
+  svg {
+    height: 1rem;
+    width: 1rem;
+    position: absolute;
+    top: 1.25rem;
+    left: 2rem;
+  }
+}
+
+
+
+
+
+

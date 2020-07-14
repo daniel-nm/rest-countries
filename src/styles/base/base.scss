@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-page-background: #{$light-gray};
+  --color-text: #{$text};
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--color-page-background);
+  color: var(--color-text);
+  font-family: $font;
+  font-size: 87.5%; /* 14px */
+  min-height: 100vh;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 100%; /* 16px */
+  }
+}
+
+// Default appearence placeholder text
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: $gray;
+  opacity: 0.5;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: $gray;
+  opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: $gray;
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $gray;
+  opacity: 0.5;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $gray;
+  opacity: 0.5;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+  color:    $gray;
+  opacity: 0.5;
+}

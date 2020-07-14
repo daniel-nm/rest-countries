@@ -1,0 +1,117 @@
+.page {
+  .btn {
+    background-color: $white;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: $text;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    @include box-shadow(rgba(133,133,133,0.1));
+
+    &--back {
+      margin: 2rem 0 4rem;
+    }
+
+    svg {
+      height: 1rem;
+      width: 1rem;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+  }
+
+  .page__details {
+    margin-bottom: 4rem;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    @media screen and (min-width: 1024px) {
+      align-items: center;
+    }
+
+    img {
+      display: block;
+      margin-bottom: 3rem;
+      max-width: 100%;
+      max-height: 400px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        width: 50%;
+      }
+    }
+
+    .info {
+      @media screen and (min-width: 768px) {
+        flex-grow: 2;
+        margin-left: 4rem;
+      }
+
+      @media screen and (min-width: 1024px) {
+        .row--flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+        }
+
+        .flex--baseline {
+          align-items: baseline;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .column p {
+      margin: 0.5rem 0;
+
+      &:last-child {
+        margin-bottom: 2rem;
+      }
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    .borders {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+      row-gap: 1rem;
+
+      @media screen and (min-width:1024px) {
+        grid-template-columns: repeat(3, 1fr);
+        width: 73%;
+      }
+    }
+
+    .btn {
+      padding: 0.5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      @media screen and (min-width: 1024px) {
+        padding: 0.5rem;
+      }
+    }
+    
+  }
+}

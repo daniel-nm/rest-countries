@@ -1,0 +1,34 @@
+.header {
+  background-color: $white;
+  padding: 2rem 0;
+  @include box-shadow(rgba(133,133,133,0.1));
+ 
+  .header__title {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  
+  .header__mode {
+    font-weight: 600;
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 0.85rem; /* 15px */
+    }
+    svg {
+      height: 0.85rem; /* 15px */
+      width: 0.85rem; /* 15px */
+      margin-right: 4px;
+      display: inline-block;
+      vertical-align: middle;
+      path {
+        fill: $white;
+        stroke: black;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 32px;
+      }
+    }
+  };
+}

@@ -1,0 +1,50 @@
+@import '../variables';
+@import '../mixins';
+
+.card {
+  color: $text;
+  display: block;
+  @include box-shadow(rgba(133,133,133,0.1));
+  width: 80%;
+  margin: 0 auto;
+  text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    margin: 0;
+  }
+
+  .card__img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    @media screen and (min-width: 1024px) {
+      height: 14.0525rem; /* 225px; */
+    }
+    @media screen and (min-width: 2560px) {
+      height: 18.75rem; /* 300px; */
+    }
+  }
+
+  .card__body {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 2rem 1.5rem;
+
+    .card__title {
+      margin-bottom: 1.5rem;
+    }
+
+    .card__field {
+      margin-bottom: 0.5rem;
+    }
+
+    .card__label {
+      font-weight: 600;
+    }
+    
+  }
+}

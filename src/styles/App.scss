@@ -1,0 +1,24 @@
+@import "./variables";
+@import "./mixins";
+
+// Base
+@import "./base/base.scss";
+
+// Layout
+@import "./layout/layout.scss";
+
+// Components
+@import "./components/header.scss";
+@import "./components/search.scss";
+@import "./components/select.scss";
+@import "./components/card.scss";
+
+// Pages
+@import "./pages/countryDetails.scss";
+
+// State
+@import "./state/state.scss";
+
+// Themes
+@import "./themes/darkTheme.scss";
+
